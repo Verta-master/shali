@@ -1,0 +1,46 @@
+.benefits {
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  counter-reset: myCounter;
+  list-style-type: none;
+  
+  li {
+    margin-bottom: 35px;
+    padding-left: 100px;
+    position: relative;
+    
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-bottom: 65px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 50px;
+    }
+  }
+  
+  li::before {
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+    font-family: 'Oranienbaum', sans-serif;
+    text-align: center;
+    color: #4b4b4b;
+    font-size: 30px;
+    line-height: 80px;
+    font-weight: 400;
+    border-radius: 50%;
+    background-color: #f4f8f9;
+  }
+}
+
+.benefits__title {
+  margin: 0 !important;
+  color: #3b9ec8;
+  text-transform: uppercase;
+}
