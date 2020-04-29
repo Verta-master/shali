@@ -1,15 +1,20 @@
+.manager {
+  overflow: hidden;
+}
+
 .manager__list {
   .reset();
   list-style: none;
   display: flex;
   justify-content: space-around;
-//  overflow: none !important;
+  margin-bottom: 80px;
 }
 
 .manager__item {
-  .reset() !important;
-  width: 25%;
-  padding-top: 35px !important;
+  .reset();
+  width: 190px;
+  padding-top: 35px;
+  text-align: center;
 }
 
 .manager__link {
@@ -18,7 +23,7 @@
   
   &:hover {
     .manager__name {
-      color: #c5360c !important;
+      color: #c5360c;
     }
   }
 }
@@ -28,7 +33,7 @@
   width: 130px;
   height: 130px;
   margin-bottom: 50px;
-  margin-left: 40px;
+  margin-left: 20px;
   padding: 5px;
   position: relative;
   background: #fff;
