@@ -28,9 +28,33 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .block__info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block__label {
+    margin-bottom: 30px;
+  }
+  .block__text {
+    width: 100%;
+  }
+  .block__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .block__img {
+    width: 260px;
+    margin-bottom: 20px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (max-width: 480px) {
+  .problem__fields,
+  .problem__text,
   .icons__item {
     width: 100%;
   }
@@ -40,5 +64,17 @@
   }
   .connect__item span {
     font-size: 12px;
+  }
+  .problem__wrap,
+  .problem__bottom {
+    display: block;
+  }
+  .problem__captcha {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .problem__btn {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
