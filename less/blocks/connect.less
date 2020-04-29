@@ -28,30 +28,98 @@
 }
 
 .connect {
-  .tel {
-    background: url(../img/icons/icon-tel.png) no-repeat left;
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 65px;
-    height: 49px;
+  padding: 20px !important;
+  margin-bottom: 40px !important;
+  color: #2e4143;
+  background-color: #f4f8f9;
+  
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.connect__list {
+  .reset() !important;
+  margin-top: 20px !important;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connect__item {
+  .reset() !important;
+  width: 50%;
+  display: block !important;
+//  min-height: 50px;
+  position: relative;
+  margin-bottom: 20px !important;
+  padding-left: 65px !important;
+  box-sizing: border-box;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/icons/icon-tel.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  span {
+    color: #b8cbd5;
+    font-size: 16px;
+  }
+  
+  &--email {
+    width: auto;
     
-    b {
-      color: #4b4b4b;
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 1;
+    .connect__tel {
+      margin-left: auto;
+      font-size: 25px;
     }
     
-    span {
-      color: #b8cbd5;
-      font-size: 16px;
+    &::before {
+      top: -10px;
+      width: 47px;
+      height: 47px;
+      background-image: url(../img/icons/icon-email.png);
+    }
+  }
+  
+  &--nets {
+    width: auto;
+    padding-left: 105px !important;
+
+    &::before {
+      top: -5px;
+      width: 94px;
+      background-image: url(../img/icons/nets.png);
+    }
+
+    .connect__tel {
+      margin-left: auto;
     }
   }
 }
 
-.a-tel {
-    color: inherit;
-    text-decoration: none;
-    text-shadow: none;
-    font-size: inherit;
+.connect__tel {
+  display: block;
+  color: #4b4b4b;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  color: #2e4143;
+  text-decoration: none !important;
+}
+
+.connect__comment {
+  max-width: 710px;
 }
