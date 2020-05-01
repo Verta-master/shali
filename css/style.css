@@ -820,6 +820,10 @@ h6,
   min-width: 300px;
   margin: 0 auto;
 }
+.wrapper .page-title {
+  color: #000;
+  letter-spacing: 3px;
+}
 .video-promo {
   padding-top: 20px;
   padding-bottom: 15px;
@@ -939,7 +943,7 @@ h6,
 }
 .steps {
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 30px;
   background: #FCFCFC;
 }
 .steps__title {
@@ -1317,6 +1321,76 @@ h6,
 }
 .recent__next {
   right: -30px;
+}
+.sorting {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sorting__option {
+  color: #7E7D7D;
+}
+.sorting__option span {
+  color: #000;
+}
+.sorting__select {
+  display: block;
+  margin-left: 10px;
+  padding-right: 25px;
+  border: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 10px;
+  outline: none;
+}
+.sorting__select::-ms-expand {
+  color: transparent;
+  border: none;
+  background-color: transparent;
+}
+.link-more {
+  width: 221px;
+  height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+  font-weight: normal;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #333;
+  border: 1px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  background: #FFFFFF;
+}
+.link-more:hover,
+.link-more:active {
+  color: #3B9EC8;
+  text-decoration: none;
+  border-color: #3B9EC8;
 }
 @media (max-width: 1200px) {
   .wrapper {
