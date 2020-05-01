@@ -1,0 +1,61 @@
+.sorting {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sorting__option {
+  color: #7E7D7D;
+  
+  span {
+    color: #000;
+  }
+}
+
+.sorting__select {
+  display: block;
+  margin-left: 10px;
+  padding-right: 25px;
+  border: 0;
+  appearance: none;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 10px;
+  outline: none;
+  
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.link-more {
+  width: 221px;
+  height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-weight: normal;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #333;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #FFFFFF;
+  
+  &:hover,
+  &:active {
+    color: #3B9EC8;
+    text-decoration: none;
+    border-color: #3B9EC8;
+  }
+}

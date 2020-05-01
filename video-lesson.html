@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Oranienbaum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <main class="content">
+    <div class="wrapper">
+      <h1 class="page-title">видео уроки по подготовке пуха</h1>
+      <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+        <ul itemscope="" itemtype="http://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="https://www.orenburgshal.ru/" rel="v:url" property="v:title" itemprop="item"><span itemprop="name">Главная</span></a> <span class="seprtr">–</span><meta itemprop="position" content="1">
+          </li> 
+          <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a href="https://www.orenburgshal.ru/" rel="v:url" property="v:title" itemprop="item"><span itemprop="name">Каталог</span></a> <span class="seprtr">–</span><meta itemprop="position" content="1">
+          </li> 
+          <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" typeof="v:Breadcrumb"><meta itemprop="item" content="https://www.orenburgshal.ru/o-kompanii/"><span itemprop="name">Дверыйе замки</span><meta itemprop="position" content="2">
+          </li>
+        </ul>
+      </div>
+
+      <div class="sorting">
+        <div class="sorting__option">Сначала:</div>
+        <select class="sorting__select">
+          <option value="1">Популярные</option>
+          <option value="2">Новые</option>
+          <option value="3">Для новичков</option>
+        </select>
+      </div>
+    </div>
+    
+    <section class="steps">
+      <div class="wrapper">
+        <div class="steps__tabs" id="tabs">
+          <ul class="steps-tabs__title">
+            <li class="steps-tabs__name"><a href="#tabs-1">подготовка пуха</a></li>
+            <li class="steps-tabs__name"><a href="#tabs-2">прядение</a></li>
+            <li class="steps-tabs__name"><a href="#tabs-3">вязание</a></li>
+            <li class="steps-tabs__name"><a href="#tabs-4">уход</a></li>
+          </ul>
+          <div class="steps-tabs__field" id="tabs-1">
+            <ul class="steps-tabs__list">
+              <li class="steps-tabs__item">
+                <a href="#" class="steps-tabs__link">
+                  <figure class="steps-tabs__img">
+                    <img src="img/images/video-1.jpg" alt="новое видео">
+                  </figure>
+                  <div class="steps-tabs__label"></div>
+                  <p class="steps-tabs__head">новое видео</p>
+                  <span class="steps-tabs__number">3 видео</span>
+                </a>
+              </li>
+              <li class="steps-tabs__item">
+                <a href="#" class="steps-tabs__link">
+                  <figure class="steps-tabs__img">
+                    <img src="img/images/video-2.jpg" alt="миссис гарисон">
+                  </figure>
+                  <div class="steps-tabs__label steps-tabs__label--newcomer">для новичков</div>
+                  <p class="steps-tabs__head">миссис гарисон</p>
+                  <span class="steps-tabs__number">3 видео</span>
+                </a>
+              </li>
+              <li class="steps-tabs__item">
+                <a href="#" class="steps-tabs__link">
+                  <figure class="steps-tabs__img">
+                    <img src="img/images/video-3.jpg" alt="новое видео">
+                  </figure>
+                  <div class="steps-tabs__label steps-tabs__label--new">новое</div>
+                  <p class="steps-tabs__head">новое видео</p>
+                  <span class="steps-tabs__number">5 видео</span>
+                </a>
+              </li>
+              <li class="steps-tabs__item">
+                <a href="#" class="steps-tabs__link">
+                  <figure class="steps-tabs__img">
+                    <img src="img/images/video-4.jpg" alt="по фирме одет">
+                  </figure>
+                  <div class="steps-tabs__label steps-tabs__label--hit">хит</div>
+                  <p class="steps-tabs__head">по фирме одет</p>
+                  <span class="steps-tabs__number">3 видео</span>
+                </a>
+              </li>
+              <li class="steps-tabs__item">
+                <a href="#" class="steps-tabs__link">
+                  <figure class="steps-tabs__img">
+                    <img src="img/images/video-5.jpg" alt="декорация">
+                  </figure>
+                  <div class="steps-tabs__label"></div>
+                  <p class="steps-tabs__head">декорация</p>
+                  <span class="steps-tabs__number">3 видео</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="steps-tabs__field" id="tabs-2">
+            прядение
+          </div>
+          <div class="steps-tabs__field" id="tabs-3">
+            вязание
+          </div>
+          <div class="steps-tabs__field" id="tabs-4">
+            уход
+          </div>
+        </div>
+        
+        <a href="#" class="link-more">показать еще</a>
+      </div>
+    </section>
+    
+  </main>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+</body>
+</html>
