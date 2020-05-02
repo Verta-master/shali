@@ -1,6 +1,26 @@
 .recent {
   padding-top: 50px;
   padding-bottom: 60px;
+  
+  &--bg {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background: #FCFCFC;
+    
+    .recent__title {
+      text-align: center;
+    }
+    
+    .recent__slider {
+      margin-top: 25px;
+      padding-bottom: 20px;
+    }
+    
+    .recent__wrap {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
 }
 
 .recent__title {
@@ -67,4 +87,126 @@
 
 .recent__next {
   right: -30px;
+}
+
+.recent__item {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-bottom: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 8px rgba(0, 33, 63, 0.1);
+  box-sizing: border-box;
+}
+
+.recent__link {
+  display: block;
+  
+  &:hover {
+    text-decoration: none;
+    
+    .recent__name {
+      color: #abc3ca;
+    }
+  }
+}
+
+.recent__img {
+  .reset();
+  width: 100%;
+  height: 296px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 100%;
+  }
+}
+
+.recent__name {
+  margin-bottom: 5px;
+  font-family: 'Oranienbaum', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #433D2E;
+}
+
+.recent__category {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Nickainley", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ABC3CA;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.recent__form {
+  margin-top: auto;
+}
+
+.recent__price {
+  margin-bottom: 20px;
+}
+
+.recent__oldprice,
+.recent__newprice {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  font-family: 'Oranienbaum', sans-serif;
+  letter-spacing: 2px;
+  color: #433D2E;
+  font-size: 12px;
+  
+  span {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+}
+
+.recent__oldprice {
+  color: #6F6A5C;
+  
+  span {
+    text-decoration: line-through;
+  }
+}
+
+.recent__btn {
+  width: 165px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 11px;
+  color: #fff;
+  background-color: #3B9EC8;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #66b7da;
+  }
 }
