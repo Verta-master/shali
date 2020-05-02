@@ -29,10 +29,12 @@
     width: 33%;
     min-width: 33%;
   }
+  .card__wrap,
   .video-promo__wrap,
   .new-video__wrap {
     display: block;
   }
+  .card__video,
   .video-promo__info,
   .new-video__info {
     width: 100%;
@@ -56,6 +58,13 @@
   .video-promo__btn {
     margin-left: auto;
     margin-right: auto;
+  }
+  .card__info {
+    width: 100%;
+  }
+  .card__video .new-video__link img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -117,6 +126,24 @@
   }
   .steps__item {
     margin-bottom: 10px;
+  }
+  .wrapper__center .page-title span::before {
+    display: none;
+  }
+  .card__video .new-video__link::before {
+    bottom: 10px;
+    font-size: 26px;
+  }
+  .net {
+    flex-direction: column;
+    
+    span {
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+  .net__list {
+    margin-top: 10px;
   }
 }
 
