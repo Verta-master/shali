@@ -206,6 +206,38 @@ h6,
   display: table-cell;
   vertical-align: middle;
 }
+.wrapper {
+  width: 1200px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+.wrapper .page-title {
+  color: #000;
+  letter-spacing: 3px;
+}
+.wrapper__center .page-title {
+  text-align: center;
+  letter-spacing: 3px;
+  color: #4C4C4C;
+}
+.wrapper__center .page-title span {
+  position: relative;
+}
+.wrapper__center .page-title span::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -75px;
+  display: block;
+  width: 49px;
+  height: 50px;
+  background-image: url(../img/icons/_ico_cat2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper__center .breadcrumbs {
+  text-align: center;
+}
 .infotext {
   margin-bottom: 30px;
   line-height: 24px;
@@ -815,15 +847,6 @@ h6,
 .problem__btn:hover {
   background-color: #66b7da;
 }
-.wrapper {
-  width: 1200px;
-  min-width: 300px;
-  margin: 0 auto;
-}
-.wrapper .page-title {
-  color: #000;
-  letter-spacing: 3px;
-}
 .video-promo {
   padding-top: 20px;
   padding-bottom: 15px;
@@ -1225,6 +1248,7 @@ h6,
   background-image: url(../img/icons/play.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  pointer-events: none;
 }
 .topics {
   padding-top: 15px;
@@ -1287,6 +1311,11 @@ h6,
 .recent__rating {
   margin-top: 15px;
   margin-bottom: 5px;
+}
+.recent__rating img,
+.recent__rating span {
+  display: inline-block;
+  vertical-align: middle;
 }
 .recent__review {
   font-size: 12px;
@@ -1391,6 +1420,139 @@ h6,
   color: #3B9EC8;
   text-decoration: none;
   border-color: #3B9EC8;
+}
+.card {
+  margin-top: 50px;
+  padding-bottom: 70px;
+}
+.card__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.card__video {
+  width: 49%;
+  position: relative;
+}
+.card__video .new-video__link {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.card__video .new-video__link img {
+  display: block;
+}
+.card__video .steps-tabs__label {
+  top: 16px;
+  left: 18px;
+}
+.card__info {
+  width: 43.5%;
+}
+.card__info .recent__rating {
+  margin-top: 0;
+}
+.card__info .new-video__youtube {
+  text-align: left;
+}
+.card__table {
+  width: 100%;
+  margin-top: 30px;
+  color: #A39E95;
+  font-size: 14px;
+  line-height: 26px;
+  border-collapse: collapse;
+}
+.card__table td {
+  vertical-align: top;
+  padding: 4px 0;
+}
+.card__table td:first-child {
+  min-width: 82px;
+  font-weight: 600;
+  color: #333;
+}
+.net {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.net span {
+  font-size: 9px;
+  line-height: 1;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: #010000;
+}
+.net__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.net__item {
+  margin: 0 10px;
+}
+.net__link {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.net__link--vk {
+  background-image: url(../img/icons/vk.svg);
+  background-size: 18px 12px;
+}
+.net__link--fb {
+  background-image: url(../img/icons/facebook.svg);
+  background-size: 9px 18px;
+}
+.net__link--ok {
+  background-image: url(../img/icons/odnoklassniki.svg);
+  background-size: 13px 20px;
+}
+.net__link--tw {
+  background-image: url(../img/icons/twitter.svg);
+  background-size: 16px 14px;
+}
+.net__link:hover,
+.net__link:active {
+  opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 @media (max-width: 1200px) {
   .wrapper {
