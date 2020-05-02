@@ -1193,7 +1193,7 @@ h6,
   margin-left: 5px;
   width: 29px;
   height: 29px;
-  background-image: url(../../img/icons/youtube.svg);
+  background-image: url(../img/icons/youtube.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1773,10 +1773,12 @@ h6,
     width: 33%;
     min-width: 33%;
   }
+  .card__wrap,
   .video-promo__wrap,
   .new-video__wrap {
     display: block;
   }
+  .card__video,
   .video-promo__info,
   .new-video__info {
     width: 100%;
@@ -1803,6 +1805,13 @@ h6,
   .video-promo__btn {
     margin-left: auto;
     margin-right: auto;
+  }
+  .card__info {
+    width: 100%;
+  }
+  .card__video .new-video__link img {
+    width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 766px) {
@@ -1875,6 +1884,26 @@ h6,
   }
   .steps__item {
     margin-bottom: 10px;
+  }
+  .wrapper__center .page-title span::before {
+    display: none;
+  }
+  .card__video .new-video__link::before {
+    bottom: 10px;
+    font-size: 26px;
+  }
+  .net {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .net span {
+    margin-right: 0;
+    text-align: center;
+  }
+  .net__list {
+    margin-top: 10px;
   }
 }
 @media (max-width: 480px) {
