@@ -1,0 +1,65 @@
+.net {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  span {
+    font-size: 9px;
+    line-height: 1;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: #010000;
+  }
+}
+
+.net__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.net__item {
+  margin: 0 10px;
+}
+
+.net__link {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4;
+  .transition();
+  
+  &--vk {
+    background-image: url(../img/icons/vk.svg);
+    background-size: 18px 12px;
+  }
+  
+  &--fb {
+    background-image: url(../img/icons/facebook.svg);
+    background-size: 9px 18px;
+  }
+  
+  &--ok {
+    background-image: url(../img/icons/odnoklassniki.svg);
+    background-size: 13px 20px;
+  }
+  
+  &--tw {
+    background-image: url(../img/icons/twitter.svg);
+    background-size: 16px 14px;
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 1;
+    .transition();
+  }
+}

@@ -1,0 +1,38 @@
+.wrapper {
+  width: 1200px;
+  min-width: 300px;
+  margin: 0 auto;
+  
+  .page-title {
+    color: #000;
+    letter-spacing: 3px;
+  }
+}
+
+.wrapper__center {
+  .page-title {
+    text-align: center;
+    letter-spacing: 3px;
+    color: #4C4C4C;
+    
+    span {
+      position: relative;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -75px;
+        display: block;
+        width: 49px;
+        height: 50px;
+        background-image: url(../img/icons/_ico_cat2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  .breadcrumbs {
+    text-align: center;
+  }
+}
