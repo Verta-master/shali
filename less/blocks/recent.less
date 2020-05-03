@@ -92,6 +92,7 @@
 }
 
 .recent__item {
+  position: relative;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -225,5 +226,23 @@
     width: 263px;
     margin-right: 30px;
     margin-bottom: 24px;
+  }
+}
+
+.recent__like {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 10;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/icons/icon-like.svg);
+  background-repeat: no-repeat;
+  background-size: 22px 19px;
+  
+  &:hover,
+  &:active {
+    background-image: url(../img/icons/icon-like-blue.svg);
   }
 }
