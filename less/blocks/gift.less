@@ -1,0 +1,155 @@
+.gift__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gift__field {
+  width: 30%;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.gift__label {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9D988E;
+}
+
+.gift__img {
+  width: 34px;
+  height: 34px;
+  margin-right: 18px;
+  
+  img {
+    display: block;
+  }
+}
+
+.gift__select {
+  display: block;
+  width: 227px;
+  max-width: 100%;
+  height: 35px;
+  padding-left: 13px;
+  padding-right: 35px;
+  color: #000;
+  background: #FFFFFF;
+  border: 1px solid #DFDFDF;
+  border-radius: 3px;
+  appearance: none;
+  background-image: url(../img/icons/angle-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 15px 9px;
+  outline: none;
+  box-sizing: border-box;
+
+  option[disabled] {
+    display: none;
+  }
+  
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.gift-icons {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.gift-icons__item {
+  position: relative;
+  
+  &:last-child {
+    .gift-icons__drop {
+      right: 0;
+      left: auto;
+      background-image: url(../img/images/shape-last.png);
+    }
+  }
+  
+  &:hover {
+    .gift-icons__drop {
+      display: block;
+    }
+  }
+}
+
+.gift-icons__wrap {
+  width: 264px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 6px;
+  padding-right: 12px;
+  background: #F3F8F9;
+  box-sizing: border-box;
+}
+
+.gift-icons__img {
+  width: 97px;
+  height: 97px;
+  
+  img {
+    display: block;
+  }
+}
+
+.gift-icons__text {
+  width: 128px;
+  margin: 0;
+  font-family: "Nickainley", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1;
+  color: #000;
+}
+
+.gift-icons__drop {
+  position: absolute;
+  z-index: 10;
+  bottom: 70px;
+  left: -48px;
+  padding: 40px 40px 40px 50px;
+  display: none;
+  width: 492px;
+  height: 213px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #646363;
+  box-sizing: border-box;
+  background-image: url(../img/images/shape.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  
+  p {
+    margin: 0;
+    max-width: 100%;
+  }
+  
+  .gift-icons__title {
+    margin-bottom: 10px;
+    font-family: "Oranienbaum", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #333;
+  }
+}
+
+.gift-icons__close {
+  display: none;
+}

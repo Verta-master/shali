@@ -208,3 +208,33 @@ h1, h2, h3, h4, h5, h6, .section__title {
     display: table-cell;
     vertical-align: middle
 }
+
+.page-header_decoration {
+  padding-left: 70px;
+}
+
+.page-header_decoration .page-header__image {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.page-header_decoration .page-title {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul,
+figure {
+  .reset();
+}
+
+@media (max-width: 1000px) {
+  .content-wrapper {
+    width: auto;
+    float: none;
+  }
+}
