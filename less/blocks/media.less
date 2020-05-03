@@ -22,6 +22,27 @@
   .recent__next {
     right: -15px;
   }
+  .view__wrap {
+    display: block;
+  }
+  .view__img {
+    display: none;
+  }
+  .view__slider {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .view__rating {
+    padding-left: 0;
+  }
+  .recent__list {
+    margin-right: 0;
+    justify-content: space-around;
+    
+    .recent__item {
+      margin-right: 0;
+    }
+  }
 }
 
 @media (max-width: 1022px) {
@@ -144,6 +165,56 @@
   }
   .net__list {
     margin-top: 10px;
+  }
+  .view__slider {
+    flex-direction: column-reverse;
+  }
+  .gallery__preview {
+    width: 100%;
+    height: 81px;
+    margin-top: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+  .gallery__main {
+    width: 100%;
+    max-width: 100%;
+  }
+  .gallery-thumbs .swiper-slide {
+    width: 60px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+      flex: 0 0 auto;
+    }
+  }
+  .view__next {
+    transform: none;
+    top: 40px;
+    bottom: auto;
+    right: 0;
+  }
+  .view__prev {
+    transform: none;
+    top: 40px;
+    left: 0;
+  }
+  .view__info {
+    flex-direction: column;
+  }
+  .view__rating {
+    margin-bottom: 20px;
+  }
+  .gallery-top {
+    height: 400px;
+  }
+  .view__pic img {
+    height: 400px;
+    width: auto;
   }
 }
 
