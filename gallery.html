@@ -67,6 +67,7 @@
                   </div>
                 </div>
               </div>
+              <div class="gallery__label">NEW</div>
             </div>
           </div>
           <figure class="view__img">
@@ -205,11 +206,20 @@
   <script>
     var galleryThumbs = new Swiper('.gallery-thumbs', {
 	    direction: 'vertical',
-      spaceBetween: 39,
+      spaceBetween: 30,
       slidesPerView: 'auto',
       freeMode: true,
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
+      breakpoints: {
+        766: {
+          direction: 'horizontal',
+        },
+        480: {
+          direction: 'horizontal',
+          slidesPerView: 3,
+        }
+      }
     });
     var galleryTop = new Swiper('.gallery-top', {
       spaceBetween: 10,
