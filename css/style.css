@@ -1390,6 +1390,7 @@ h6,
   right: -30px;
 }
 .recent__item {
+  position: relative;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1533,6 +1534,22 @@ h6,
   width: 263px;
   margin-right: 30px;
   margin-bottom: 24px;
+}
+.recent__like {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 10;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/icons/icon-like.svg);
+  background-repeat: no-repeat;
+  background-size: 22px 19px;
+}
+.recent__like:hover,
+.recent__like:active {
+  background-image: url(../img/icons/icon-like-blue.svg);
 }
 .sorting {
   position: relative;
